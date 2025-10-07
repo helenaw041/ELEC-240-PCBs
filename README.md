@@ -1,2 +1,2 @@
 # ELEC-240-PCBs
-PCBs I'm making in ELEC 240 lab class!
+Make PCBs related to Halloween and Christmas with at least 1 IC 
