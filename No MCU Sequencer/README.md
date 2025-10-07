@@ -9,3 +9,4 @@ Loop the 3 notes for a spooky tune! Use record button to clock in notes.
 FUTURE IMPROVEMENTS:
 - If I get a decoder, I can use each shift register to represent one bit of information and can actually represent 8 notes with only 3 shift registers!
 - No decoder--possibly implement an R2R DAC with an antilog amplifier to create a full scale of notes?
+- Find more slide switches...to replace the push buttons for the notes
