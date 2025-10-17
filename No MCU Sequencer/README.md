@@ -3,7 +3,7 @@ The user can input up to 8 notes in the shift register and play them back at an 
 The three 555 timers are for clocking in current input notes, setting the playback frequency, and outputting the notes stored in the shift registers. 
 I currently have one shift register for each note. 
 
-**TO USE: **
+**TO USE:**
 Loop the 3 notes for a spooky tune! Use record button to clock in notes. 
 
 **FUTURE IMPROVEMENTS:**
