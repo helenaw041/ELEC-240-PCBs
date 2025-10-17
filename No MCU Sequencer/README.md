@@ -32,11 +32,11 @@ To elaborate on the input to SERpin 14 for the shift registers: When the 555 tim
 The reset button resets the shift registers. 
 
 Let us say that we want to play a simple sequence of notes: A3, C4, D#4, silence, A3, C4, D#4, silence. Because the shift register can only store eight bits of data, the melody will loop once these eight notes have been played. 
-Ensure all 4 SPDT switches are toggled to pulse/record mode. Also press the reset button to ensure the shift registers are fully cleared. 
-Press down on the push button corresponding to the note A3, and without releasing it, press down on the push button connected to the first 555 timer to send a pulse to the shift registers. Because A3 is the only button pressed down, a ‘1’ will be clocked into the 8th bit slot of the A3 shift register. 
-Now release all buttons. Press down on the push button corresponding to C4, and clock it in the same way as in step 2. Now, a ‘1’ will be clocked into the 8th bit slot of the C4 shift register. The bit in ‘A3’ will “move up” to the 7th slot. 
-Now repeat this until the remaining 6 notes are clocked into the shift registers. 
-Toggle the three SPDT switches connected to the shift registers to playback mode now in no particular order. This means that the shift registers will no longer take inputs from the corresponding buttons but will loop the data already stored in them. 
-Now flip the SPDT switch connected to the SRCLKpin 11 input to playback mode so that notes are clocked in periodically at a frequency corresponding to that of the playback frequency of the second shift register. 
-The inputted notes should now loop until the reset button is pressed or power is disconnected!
+1. Ensure all 4 SPDT switches are toggled to pulse/record mode. Also press the reset button to ensure the shift registers are fully cleared. 
+2. Press down on the push button corresponding to the note A3, and without releasing it, press down on the push button connected to the first 555 timer to send a pulse to the shift registers. Because A3 is the only button pressed down, a ‘1’ will be clocked into the 8th bit slot of the A3 shift register. 
+3. Now release all buttons. Press down on the push button corresponding to C4, and clock it in the same way as in step 2. Now, a ‘1’ will be clocked into the 8th bit slot of the C4 shift register. The bit in ‘A3’ will “move up” to the 7th slot. 
+4. Now repeat this until the remaining 6 notes are clocked into the shift registers. 
+5. Toggle the three SPDT switches connected to the shift registers to playback mode now in no particular order. This means that the shift registers will no longer take inputs from the corresponding buttons but will loop the data already stored in them.
+6. Now flip the SPDT switch connected to the SRCLKpin 11 input to playback mode so that notes are clocked in periodically at a frequency corresponding to that of the playback frequency of the second shift register.
+7. The inputted notes should now loop until the reset button is pressed or power is disconnected!
 
