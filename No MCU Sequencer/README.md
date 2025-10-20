@@ -10,6 +10,7 @@ Loop the 3 notes for a spooky tune! Use record button to clock in notes.
 - If I get a decoder, I can use each shift register to represent one bit of information and can actually represent 8 notes with only 3 shift registers!
 - No decoder--possibly implement an R2R DAC with an antilog amplifier to create a full scale of notes?
 - Find more slide switches...to replace the push buttons for the notes
+- Add an audio amplifier
 
 **Detailed Description:**
 I designed a simple sequencer using 3 shift registers and 3 555 timers, where the user is able to “store” up to eight “beats” from a selection of three distinct notes in the SISO shift registers in the pulse mode and play them back at a configurable frequency in the playback mode. 
